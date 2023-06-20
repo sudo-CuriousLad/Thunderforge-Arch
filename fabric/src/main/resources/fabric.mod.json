@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "thunderforge",
+  "version": "${version}",
+
+  "name": "Thunderforge",
+  "description": "",
+  "authors": [],
+  "contact": {},
+
+  "license": "GNU GPL 3.0",
+  "icon": "icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      {
+        "adapter": "kotlin",
+        "value": "dev.curiouslad.thunderforge.ThunderforgeFabric"
+      }
+    ]
+  },
+  "mixins": [
+    "thunderforge.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "minecraft": ">=1.19.2"
+  }
+}
